@@ -14,12 +14,40 @@ body{
     background-color: #FFFFFF;
     letter-spacing: 0.03em;
 }
+ 
+h1,
+h2,
+h3,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, 
+ol{
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
 .link {
     text-decoration: none;
+}
+img{
+    display: block;
+}
+botton{
+    cursor: pointer;
 }
 
 .list {
     list-style: none;
+}
+
+.conteiner{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .accent-link{
     color: var(--accent-color);
@@ -29,15 +57,30 @@ body{
 }
 
 
-/* header */
+/* -------header------- */
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-conteiner,
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+
 .part-logo{
     font-family: 'Raleway',sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        color: var(--accent-color)
+        color: var(--accent-color)       
 }
 .part2-logo{
+    margin-right: 93px;
     color: var(--primary-color);
 }
 .footer-part2-logo{
@@ -52,6 +95,18 @@ body{
 .menu-link:hover,
 .menu-link:focus{
     color: var(--accent-color);
+}
+.menu-item:not(:last-child){
+    margin-right: 50px;
+}
+.menu-contact{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: auto;
+}
+.contact-item:not(:last-child){
+    margin-left: 50px;
 }
 .cotnact-mail,
 .contact-phone {
@@ -70,11 +125,18 @@ body{
 .cotnact-mail:focus{
 color: var(--accent-color);
 }
+
+/* ----------HERO------------ */
+
 .hero{
     background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
 }
 .hero-title{
-    
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -82,27 +144,46 @@ color: var(--accent-color);
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--second-accent-color);
-        
+        margin-bottom: 30px;
+    
+            
 }
 .hero-btm{
-    
+
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
+
         display: flex;
         align-items: center;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
         letter-spacing: 0.06em;
     
         color: var(--second-accent-color);
         background-color: var(--accent-color);
         cursor: pointer;
 }
-
+/* ======BENEFITS======= */
+.benefits{
+    padding-top: 94px;
+    padding-bottom: 104px;
+}
+.benefits-list{
+    display: flex;
+        margin-left: auto;
+        margin-right: auto;
+}
+.benefits-item:not(:last-child){
+    margin-right: 30px;
+}
 .benefits-title{
-    
         line-height: 1.14;
         text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 10px;
     
 }
 .benefits-text{
@@ -110,30 +191,61 @@ color: var(--accent-color);
     
         color: var(--secondary-color);
 }
+
+/* ======we do===== */
+.section-wedo{
+    padding-bottom: 94px;
+}
 .section-title{
-    
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
+        margin-bottom: 48px;
 }
+.wedo-list{
+    display: flex;
+        margin-left: auto;
+        margin-right: auto;
+}
+.wedo-item:not(:last-child){
+    margin-right: 30px;
+}
+/* ========team====== */
 .team{
+    padding-top: 94px;
     background: var(--srcond-background-color);
 }
+.team-list{
+    display: flex;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.team-item:not(:last-child){
+    margin-right: 30px;
+    
+}
+.team-item{
+display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--second-accent-color)
+    
+}
 .team-title{
-  
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
         text-align: center;
-    
 }
 .team-text  {
-   
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
         color: var(--secondary-color);
 }
+
+
 .footer{
     background: var(--background-color);
 }
@@ -176,6 +288,7 @@ color: var(--accent-color);
 .active-btm{
     background-color: var(--accent-color);
     stop-color: var(--second-accent-color);
+    color: #FFFFFF;
     font-weight: 500;
         font-family: inherit;
         font-size: 16px;
