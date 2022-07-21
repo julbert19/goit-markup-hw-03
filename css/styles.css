@@ -63,14 +63,17 @@ botton{
     padding-bottom: 25px;
 }
 .header-conteiner,
-.header-nav{
+.header-nav {
     display: flex;
     align-items: center;
 
 }
+
 .header-portfolio{
     margin-bottom: 94px;
-    border: 1px solid #ECECEC
+    border-bottom:1px solid #ECECEC
+    
+    
 }
 .menu{
     display: flex;
