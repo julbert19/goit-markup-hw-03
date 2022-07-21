@@ -334,7 +334,9 @@ display: flex;
     gap: 30px;
 }
 .cases-item{
-    border: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
     padding-bottom: 20px;
 }
 .cases-img{
