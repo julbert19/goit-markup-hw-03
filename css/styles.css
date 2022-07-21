@@ -66,6 +66,11 @@ botton{
 .header-nav{
     display: flex;
     align-items: center;
+
+}
+.header-portfolio{
+    margin-bottom: 94px;
+    border: 1px solid #ECECEC
 }
 .menu{
     display: flex;
@@ -218,8 +223,8 @@ color: var(--accent-color);
 }
 .team-list{
     display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        gap: 30px
+        ;
 }
 .team-item{
     background-color: var(--second-accent-color);
@@ -277,6 +282,17 @@ display: flex;
     color: var(--accent-color);
 }
 /* ПОРТФОЛИО */
+.portfolio{
+    margin-bottom: 94px;
+}
+.filters-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+.filters-item:not(:last-child){
+    margin-right: 8px;
+}
 .filters-btm{
     
         font-weight: 500;
@@ -285,6 +301,8 @@ display: flex;
         line-height: 1.62;
         text-align: center;
         cursor: pointer;
+        border-radius: 4px;
+        background-color: var(--srcond-background-color);
 }
 .filters-btm:hover,
 .filters-btm:focus{
@@ -306,12 +324,29 @@ display: flex;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+        margin-left: 24px;
     
         color: var(--primary-color);
+}
+.cases-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cases-item{
+    border: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+}
+.cases-img{
+    margin-bottom: 20px;
+}
+.portfolio-title{
+    margin-bottom: 4px;
 }
 .cases-text{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
         color: var(--secondary-color);
+        margin-left: 24px;
 }
