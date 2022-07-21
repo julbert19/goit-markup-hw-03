@@ -334,11 +334,12 @@ display: flex;
     gap: 30px;
 }
 .cases-item{
-    border-right: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
     padding-bottom: 20px;
+    border-right: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
 }
+
 .cases-img{
     margin-bottom: 20px;
 }
@@ -351,4 +352,5 @@ display: flex;
         line-height: 1.88;
         color: var(--secondary-color);
         margin-left: 24px;
+       
 }
