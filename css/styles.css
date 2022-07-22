@@ -363,7 +363,11 @@ display: flex;
 }
 
 .cases-img{
-    margin-bottom: 20px;
+    
+}
+.cases-description{
+    border: 1px solid #EEEEEE;
+    padding-top: 30px;
 }
 .portfolio-title{
     margin-bottom: 4px;
