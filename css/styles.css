@@ -79,18 +79,22 @@ botton{
     display: flex;
     align-items: center;
 }
-
+.logo{
+    margin-right: 93px;
+}
 .part-logo{
     font-family: 'Raleway',sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        color: var(--accent-color)       
+        color: var(--accent-color)   
+        
 }
 .part2-logo{
     margin-right: 93px;
     color: var(--primary-color);
 }
+
 .footer-part2-logo{
     color: var(--second-accent-color);
 }
@@ -134,28 +138,33 @@ botton{
 color: var(--accent-color);
 }
 
+
 /* ----------HERO------------ */
 
 .hero{
     background: var(--background-color);
-    display: flex;
+}
+.hero-conteiner{
+display: flex;
     flex-direction: column;
     padding-top: 200px;
     padding-bottom: 200px;
+    align-items: center;
+   
     
 }
 .hero-title{
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
+        text-align: center;(--srcond-background-color);
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--second-accent-color);
         margin-bottom: 30px;
-    
-            
+        width: 696px;    
 }
+
 .hero-btm{
 
         font-weight: 700;
@@ -165,9 +174,8 @@ color: var(--accent-color);
         display: flex;
         align-items: center;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        
+        align-items: baseline;
+
         letter-spacing: 0.06em;
     
         color: var(--second-accent-color);
@@ -181,6 +189,7 @@ color: var(--accent-color);
 }
 .benefits-list{
     display: flex;
+    justify-content: center;
         margin-left: auto;
         margin-right: auto;
 }
@@ -192,6 +201,7 @@ color: var(--accent-color);
         text-transform: uppercase;
         font-size: 14px;
         margin-bottom: 10px;
+        width: 270px;
     
 }
 .benefits-text{
@@ -263,6 +273,13 @@ display: flex;
     padding-left: 216px;
     padding-bottom: 60px;
 }
+.footer-logo{
+    margin-bottom: 20px;
+}
+.footer-adress,
+.footer-mail{
+   margin-bottom: 9px; 
+}
 .footer-adress,
 .footer-mail,
 .footer-phone {
@@ -282,6 +299,10 @@ display: flex;
 }
 .footer-phone:hover,
 .footer-phone:focus {
+    color: var(--accent-color);
+}
+.footer-adress:hover,
+.footer-adress:focus {
     color: var(--accent-color);
 }
 /* ПОРТФОЛИО */
@@ -338,9 +359,7 @@ display: flex;
 }
 .cases-item{
     padding-bottom: 20px;
-    border-right: 1px solid #EEEEEE;
-        border-left: 1px solid #EEEEEE;
-        border-bottom: 1px solid #EEEEEE;
+        flex-basis: calc((100%-2*30px)/3);
 }
 
 .cases-img{

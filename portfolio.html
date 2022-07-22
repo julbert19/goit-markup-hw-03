@@ -11,16 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header header-portfolio">
-      <div class="conteiner header-conteiner"> 
+      <div class="conteiner header-conteiner "> 
         <nav class="header-nav ">
-          <a class="part-logo link" href="./index.html" lang="en">Web<span class="part2-logo">Studio</span></a>
+          <div class="logo"><a class="part-logo link" href="./index.html" lang="en">Web<span class="part2-logo">Studio</span></a></div>
+          
         <ul class="menu list">
           <li class="menu-item">
-            <a class="link menu-link" href="./index.html">Студия</a>
+            <a class="menu-link link " href="./index.html">Студия</a>
           </li>
           <li class="menu-item">
             <a class="accent-link link" href="./portfolio.html">Портфолио</a>
@@ -37,6 +40,8 @@
         </li>
       </ul></div>
     </header>
+
+
     <main>
       <!-- filters -->
       <section class="portfolio">
@@ -63,8 +68,8 @@
         <ul class="cases-list">
           <li class="cases-item list">
             <img class="cases-img" src="./images/2/img-1.jpg" alt="" width="370" />
-            <h3 class="portfolio-title">Технокряк</h3>
-            <p class="cases-text">Веб-сайт</p>
+            <div class="cases-description"><h3 class="portfolio-title">Технокряк</h3>
+            <p class="cases-text">Веб-сайт</p></div> 
           </li>
           <li class="cases-item list">
             <img class="cases-img" src="./images/2/img.jpg" alt="" width="370" />
