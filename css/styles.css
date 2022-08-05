@@ -305,7 +305,7 @@ display: flex;
     margin-right: 8px;
 }
 .filters-btm{
-    direction: not;
+    border: none;
         font-weight: 500;
         font-family: inherit;
         font-size: 16px;
@@ -314,6 +314,7 @@ display: flex;
         cursor: pointer;
         border-radius: 4px;
         background-color: var(--srcond-background-color);
+        padding: 6px 22px;
 }
 .filters-btm:hover,
 .filters-btm:focus{
@@ -321,6 +322,9 @@ display: flex;
     color: var(--second-accent-color);   
 }
 .active-btm{
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
     background-color: var(--accent-color);
     stop-color: var(--second-accent-color);
     color: #FFFFFF;
@@ -345,7 +349,7 @@ display: flex;
 }
 .cases-item{
     padding-bottom: 20px;
-        flex-basis: calc((100%-2*30px)/3);
+        flex-basis: calc(( 100% - 60px) / 3 );
 }
 
 .cases-img{
@@ -356,7 +360,7 @@ display: flex;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE ;
     border-bottom: 1px solid #EEEEEE;
-    padding: 20px 24px 20px 24px;
+    padding: 20px 24px ;
     
     
 }
