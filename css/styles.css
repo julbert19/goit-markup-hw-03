@@ -21,7 +21,9 @@ h3,
 p{
     margin-top: 0;
     margin-bottom: 0;
+    margin: 0;
 }
+
 ul, 
 ol{
 margin-top: 0;
@@ -34,7 +36,7 @@ padding-left: 0;
 img{
     display: block;
 }
-botton{
+.botton{
     cursor: pointer;
 }
 
@@ -55,7 +57,10 @@ botton{
         line-height: 1.14;
         letter-spacing: 0.02em;
 }
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* -------header------- */
 .header{
@@ -66,7 +71,6 @@ botton{
 .header-nav {
     display: flex;
     align-items: center;
-
 }
 
 .header-portfolio{
@@ -91,7 +95,6 @@ botton{
         
 }
 .part2-logo{
-    margin-right: 93px;
     color: var(--primary-color);
 }
 
@@ -143,26 +146,24 @@ color: var(--accent-color);
 
 .hero{
     background: var(--background-color);
-}
-.hero-conteiner{
-display: flex;
-    flex-direction: column;
     padding-top: 200px;
     padding-bottom: 200px;
-    align-items: center;
-   
-    
+    text-align: center;
 }
+
 .hero-title{
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;(--srcond-background-color);
+       (--srcond-background-color);
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--second-accent-color);
         margin-bottom: 30px;
-        width: 696px;    
+        width: 696px; 
+        margin-left: auto;
+        margin-right: auto;
+
 }
 
 .hero-btm{
@@ -171,8 +172,6 @@ display: flex;
         font-size: 16px;
         line-height: 1.88;
 
-        display: flex;
-        align-items: center;
         text-align: center;
         align-items: baseline;
 
@@ -183,10 +182,7 @@ display: flex;
         cursor: pointer;
 }
 /* ======BENEFITS======= */
-.benefits{
-    padding-top: 94px;
-    padding-bottom: 104px;
-}
+
 .benefits-list{
     display: flex;
     justify-content: center;
@@ -206,14 +202,11 @@ display: flex;
 }
 .benefits-text{
         line-height: 1.71;
-    
         color: var(--secondary-color);
 }
 
 /* ======we do===== */
-.section-wedo{
-    padding-bottom: 94px;
-}
+
 .section-title{
         font-size: 36px;
         line-height: 1.17;
@@ -230,8 +223,6 @@ display: flex;
 }
 /* ========team====== */
 .team{
-    padding-top: 94px;
-    padding-bottom: 94px;
     background: var(--srcond-background-color);
 }
 .team-list{
@@ -270,15 +261,13 @@ display: flex;
 .footer{
     background: var(--background-color);
     padding-top: 60px;
-    padding-left: 216px;
     padding-bottom: 60px;
 }
 .footer-logo{
     margin-bottom: 20px;
 }
-.footer-adress,
-.footer-mail{
-   margin-bottom: 9px; 
+.footer-item{
+    margin-bottom: 9px;
 }
 .footer-adress,
 .footer-mail,
@@ -306,9 +295,7 @@ display: flex;
     color: var(--accent-color);
 }
 /* ПОРТФОЛИО */
-.portfolio{
-    margin-bottom: 94px;
-}
+
 .filters-list{
     display: flex;
     justify-content: center;
@@ -318,7 +305,7 @@ display: flex;
     margin-right: 8px;
 }
 .filters-btm{
-    
+    direction: not;
         font-weight: 500;
         font-family: inherit;
         font-size: 16px;
@@ -348,7 +335,6 @@ display: flex;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        margin-left: 24px;
     
         color: var(--primary-color);
 }
@@ -363,11 +349,16 @@ display: flex;
 }
 
 .cases-img{
+
     
 }
 .cases-description{
-    border: 1px solid #EEEEEE;
-    padding-top: 30px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE ;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 20px 24px 20px 24px;
+    
+    
 }
 .portfolio-title{
     margin-bottom: 4px;
@@ -377,6 +368,6 @@ display: flex;
         font-size: 16px;
         line-height: 1.88;
         color: var(--secondary-color);
-        margin-left: 24px;
+        
        
 }
